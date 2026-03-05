@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHATTY UI</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-top">
+        <button id="new-chat-btn" class="new-chat-btn">
+          <i data-lucide="square-pen" class="icon-sm"></i>
+          <span>New chat</span>
+        </button>
+        <button id="close-sidebar" class="icon-btn mobile-close">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      
+      <div class="history-container">
+        <p class="history-label">Chat History</p>
+        <ul id="history-list" class="history-list">
+          </ul>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <button id="toggle-sidebar" class="icon-btn">
+          <i data-lucide="menu"></i>
+        </button>
+        <span class="model-name">CHATTY 1.0</span>
+      </header>
+
+      <div id="chat-area" class="chat-area">
+        <div id="welcome-screen" class="welcome-screen">
+          <h2>How can I help you today?</h2>
+        </div>
+        </div>
+
+      <div class="input-section">
+        <div class="input-wrapper">
+          <textarea id="msg-input" placeholder="Message CHATTY..." rows="1"></textarea>
+          <button id="send-btn" class="send-btn" disabled>
+            <i data-lucide="arrow-up"></i>
+          </button>
+        </div>
+        <p class="disclaimer">CHATTY can make mistakes. Consider verifying important information.</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
